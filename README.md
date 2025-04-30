@@ -24,3 +24,9 @@ conda install habitat-sim=0.2.0 -c aihabitat -c conda-forge
   ```bash
   python download_mp.py --task habitat -o path/to/your/dataset/  
   ```
+## 2.2 打开场景
+使用类似下列命令打开场景测试：
+```
+habitat-viewer path/to/your/scene/1LXtFkjw3qL.glb
+```
+可以使用wasd控制水平移动，zx控制垂直移动，↑↓←→控制相机视角转动
