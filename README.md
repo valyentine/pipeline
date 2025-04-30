@@ -29,4 +29,4 @@ conda install habitat-sim=0.2.0 -c aihabitat -c conda-forge
 ```
 habitat-viewer path/to/your/scene/1LXtFkjw3qL.glb
 ```
-可以使用wasd控制水平移动，zx控制垂直移动，↑↓←→控制相机视角转动
+可以使用wasd控制水平移动，zx控制垂直移动，↑↓←→控制相机视角转动，更多详细操作可参照[教程](https://github.com/GuoPingPan/Habitat-Sim-Usage-Chinese)
