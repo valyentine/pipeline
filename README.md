@@ -17,12 +17,8 @@ conda install habitat-sim=0.2.0 -c aihabitat -c conda-forge
 
 # 2. 测试使用
 ## 2.1 场景文件下载
-**HM3D** 可通过网盘下载
-
-
-**Gibson** 可通过[此处](https://dl.fbaipublicfiles.com/habitat/data/scene_datasets/gibson_habitat.zip)下载
-
-
+**HM3D** 可通过网盘下载;
+**Gibson** 可通过[此处](https://dl.fbaipublicfiles.com/habitat/data/scene_datasets/gibson_habitat.zip)下载;
 **MP3D** 可通过以下命令下载：
 
   ```bash
