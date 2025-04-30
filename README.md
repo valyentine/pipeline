@@ -14,3 +14,5 @@ conda activate habitat
 conda install habitat-sim=0.2.0 -c aihabitat -c conda-forge
 ```
 安装 2.0 版本即可，如需安装其他版本，请根据对应版本调整 Python 版本。
+
+# 2. 测试使用
