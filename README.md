@@ -42,11 +42,13 @@ mkdir 1LXtFkjw3qL
 ```
 
 ## 3.2 采集轨迹
-使用start.py打开场景，该脚本可调整模拟器分辨率，可以根据具体自己屏幕具体情况调整为1080p、2k等16:9的比例,同时运行rename_pose.bash
+使用start.py打开场景，该脚本可调整模拟器分辨率，可以根据具体自己屏幕具体情况调整为1080p、2k等16:9的比例,同时运行rename_pose.sh
 ```
 python start.py -S 1LXtFkjw3qL.glb
 bash rename_pose.bash
 ```
 :warning: 记得在每次准备收集一条新轨迹时都一定要运行rename_pose.bash！
-
-
+飞到预定的起飞地点后，运行get_traj.sh，然后切回Viewer窗口开始正常操控即可
+```
+bash get_traj.sh
+```
