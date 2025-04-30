@@ -94,3 +94,4 @@ python get_screen.py
   ```
   打开场景后按一下]键，即可加载到对应位置查看该帧是不是掉地下去了，然后删除掉下去的帧即可，不用全部重飞
 - 使用get_screenshots.py获取完图像后，可以看一下每个traj文件夹下的saved_transformations和screenshots文件数是否相同，然后每个场景随便选一个traj看看图像是否正常即可
+- 如果get_screenshots.py收集到的某条轨迹图像有问题需重新采集，只需删除这一条轨迹的screenshots然后重新运行即可，该采集脚本会自动略过已经存在screenshots文件夹的轨迹
