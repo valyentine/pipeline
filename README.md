@@ -45,10 +45,32 @@ mkdir 1LXtFkjw3qL
 使用start.py打开场景，该脚本可调整模拟器分辨率，可以根据具体自己屏幕具体情况调整为1080p、2k等16:9的比例,同时运行rename_pose.sh
 ```
 python start.py -S 1LXtFkjw3qL.glb
-bash rename_pose.bash
+sh rename_pose.bash
 ```
 :warning: 记得在每次准备收集一条新轨迹时都一定要运行rename_pose.bash！
 飞到预定的起飞地点后，运行get_traj.sh，然后切回Viewer窗口开始正常操控即可
 ```
-bash get_traj.sh
+sh get_traj.bash
 ```
+飞到预定终点降落后，按一下esc即可退出模拟器
+
+## 3.3 轨迹处理
+收集完轨迹时，坐标文件会保存在当前目录的saved_transformations中，需要使用removal.py删除冗余帧
+```
+python removal.py -P saved_transformations/
+```
+然后在场景文件夹下新建traj_1、traj_2等格式的文件并将saved_transformations剪切过去
+```
+mkdir  1LXtFkjw3qL/traj_1
+mv saved_transformations/ 1LXtFkjw3qL/traj_1/
+```
+之后即可开始在该场景下采集下一条轨迹，回到3.2的流程
+
+在采集完当前场景下的轨迹后，使用inverse.py对轨迹进行增广
+```
+python inverse.py -P 1LXtFkjw3qL
+```
+该脚本会将采集到的轨迹的起点和终点互换得到一条新的轨迹
+
+最后将收集好的场景和轨迹文件分别移至相应的文件(scene/和UNDONE/)即可
+
