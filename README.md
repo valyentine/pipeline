@@ -52,6 +52,7 @@ sh rename_pose.bash
 ```
 sh get_traj.bash
 ```
+
 飞到预定终点降落后，按一下esc即可退出模拟器
 
 ## 3.3 轨迹处理
