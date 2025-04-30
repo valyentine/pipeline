@@ -74,3 +74,10 @@ python inverse.py -P 1LXtFkjw3qL
 
 最后将收集好的场景和轨迹文件分别移至相应的文件(scene/和UNDONE/)即可
 
+## 3.4 图像收集
+使用get_screen.py批量自动收集图像
+```
+python get_screen.py
+```
+:warning: 注意使用前请修改脚本中的全局变量 PATH_TO_GLB和sleeptime，前者是轨迹文件和场景文件的路径映射，后者是每次打开该场景预计的时间
+
