@@ -1,0 +1,2 @@
+# pipeline
+使用habitat模拟器进行无人机室内飞行轨迹收集pipeline
